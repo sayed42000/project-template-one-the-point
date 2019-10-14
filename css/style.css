@@ -1,0 +1,576 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'EB Garamond',serif;
+
+}
+.header{
+    width: 1100px;
+    background: #f8f8f8;
+}
+.nav-top{
+    height: 120px;
+    border-top: 4px solid #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #f1f1f1;
+}
+.header-left img{
+    margin-left: -190px;
+}
+.header-right {
+    margin-right: 48px
+}
+.header-right input[type="text"]{
+    padding-left: 14px;
+    color: #c7c7c7;
+    font-weight: bold;
+    padding-right: 30px;
+}
+.header-right input[type="submit"]{
+    background: #d54346;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    padding: 2px;
+}
+
+/*
+=============================
+Nav bottom
+=============================
+*/
+.nav-bottom{
+    display: flex;
+    height: 65px;
+}
+.nav-bottom .main-nav{
+    margin-left: 0;
+    padding-left: 10px;
+    width: 70%;
+}
+.nav-bottom .main-nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bottom .main-nav ul li{
+    display: block;
+    margin-left: 13px;
+    padding-top: 10px;
+    position: relative;
+    transition: transform .4s;
+}
+.nav-bottom .main-nav ul li:hover {
+    transform: scale(1.2);
+}
+.nav-bottom .main-nav ul li::after{
+   content: "";
+   position: absolute;
+   width: 1px;
+   height: 35px;
+   background: #000;
+   top: 15px;
+   right: 0; 
+}
+.nav-bottom .main-nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.nav-bottom .main-nav ul li span{
+    float: left;
+    margin-top: -7px;
+}
+/*
+=============================
+Link Items
+=============================
+*/
+.link-items{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 34px;
+}
+.link-items a{
+    display: block;
+    margin-right: 15px;
+    height: 33px;
+    width: 33px;
+    background: #000000;
+    border-radius: 50%;
+}
+.link-items a i{
+    text-align: center;
+    padding: 7px;
+    font-size: 18px;
+    color: #fff;
+}
+.link-items a:hover{
+    background: maroon;
+}
+.clear {
+    clear: both;
+}
+/*
+=============================
+Slider
+=============================
+*/
+.banner-slider{
+    height: 500px;
+    width: 1100px;
+    position: relative;
+    background: #f8f8f8;
+}
+.banner-slider img{
+    display: block;
+    max-height: 500px;
+    max-width: 1100px;
+}
+.banner-slider::after{
+    content:'I MA sayed Here Is your Favorite shop';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #0f0f0f;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding-top: 9px;
+}
+/*
+=============================
+Article Section
+=============================
+*/
+.main-section{
+    width: 1100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #f8f8f8;
+    position: relative;
+}
+.heading , .para{
+    padding-top: 30;
+    text-align: center;
+}
+.para{
+    margin-top: .1em;
+    font-size: 25px;
+    color: #c1c1c1;
+}
+/*
+=============================
+Profile cards
+=============================
+*/
+.profile-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+.p1 img,
+.p2 img, 
+.p3 img, 
+.p4 img {
+    width: 220px;
+    height: 220px;
+    filter: opacity(.8);
+    background: linear-gradient(rgba(0,0,0,.5));
+}
+.p1 h1,
+.p2 h1,
+.p3 h1,
+.p4 h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.p1 .view-profile,
+.p2 .view-profile,
+.p3 .view-profile,
+.p4 .view-profile{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    padding: 5px;
+    text-transform: capitalize;
+    display: block;
+    width: 60%;
+    height: 37px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.p1 .view-profile a,
+.p2 .view-profile a,
+.p3 .view-profile a,
+.p4 .view-profile a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.p1 .view-profile::after,
+.p2 .view-profile::after,
+.p3 .view-profile::after,
+.p4 .view-profile::after {
+    content: '>>';
+    padding-left: 5px;
+    top: 20px;
+    right: 0;
+    font-size: 13px;
+}
+
+.main-section::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+    background: #000;
+    opacity: .3;
+
+}
+.last-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    padding-top: 30px;
+    position: relative;
+    background: #f8f8f8;
+}
+.info{
+    width: 30%;
+}
+.info p{
+    text-transform: uppercase;
+    text-align: right;
+    position: relative;
+}
+.info p span{
+    color: red;
+    font-size: 80px;
+    padding-top: 20px;
+}
+.info p .work{
+    padding-right: 109px;
+}
+.info p::after{
+    content: '>>';
+    position: absolute;
+    font-size: 78px;
+    top: 137px;
+    right: -12px;
+    color: red;
+}
+.worksheet-one{
+    width: 30%;
+}
+.worksheet-one img{
+    height: 50%;
+    width: 100%;
+    justify-content: space-around;
+}
+.worksheet-one .title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.worksheet-one .details{
+    text-align: center;
+}
+.worksheet-one .button{
+    text-align: center;
+    margin-top: 15px;
+    padding: 5px;
+    display: block;
+    width: 34%;
+    height: 37px;
+    border-radius: 10px;
+    background: red;  
+    position: relative;
+    opacity: .7;
+    transition: opacity 0.3;
+}
+.worksheet-one .button:hover{
+    opacity: 1;
+}
+.worksheet-one .button a{
+    text-decoration: none;
+    margin-left: -20px;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+.worksheet-one .button::after{
+    content: '>>';
+    position: absolute;
+    color: #ffffff;
+    top: 10px;
+    right: 9px;
+    font-size: 13px;
+}
+.last-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background: #ad6769;
+}
+/*
+=============================
+Top footer
+=============================
+*/
+.top-footer {
+    display: flex;
+    position: relative;
+    width: 1100px;
+    background: #d54346;
+}
+.about-us{
+    position: relative;
+}
+.flex-one{
+    width: 30%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.flex-one .title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.flex-one .about{
+    color: #ffffff;
+    text-align-last: left;
+}
+.flex-one .anchor-one{
+    text-transform: capitalize;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+.about-us .anchor-one::after {
+     content: '>>';
+     position: absolute;
+     font-size: 110px;
+     top: 140px;
+     right: 248px;
+     color: #000;
+     font-size: 15px;
+     text-decoration: none;
+}
+.from-blog .blog-title{
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+
+}
+.post{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.post .post-title{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+}
+.post .post-title span{
+    position: absolute;
+    bottom: -12px;
+    font-size: 13px;
+}
+.post p{
+    margin-top: 15px;
+    color: #fff;
+    line-height: 18px;
+}
+/*
+=============================
+Post title anchor tag
+=============================
+*/
+.post .anchor-one{
+    display: block;
+    position: relative;
+    font-size: 15px;
+}
+/*
+=============================
+Post title anchor tag after
+=============================
+*/
+.post .anchor-one::after{
+     content: '>>';
+     position: absolute;
+     font-size: 110px;
+     top: 1px;
+     right: 245px;
+     color: #000;
+     font-size: 15px;
+}
+/*
+=============================
+Link Bottom
+=============================
+*/
+.link{
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.flex-one ul li {
+    list-style: none;
+    font-size: 15px;
+    border-bottom: 1px solid #cbc9c9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+.flex-one ul li::before{
+        content: '>>';
+        position: absolute;
+        color: #fff;
+        left: 0;
+        font-size: 11px;
+        top: 7px;
+}
+.flex-one ul li a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+}
+.flex-one ul li a:hover{
+    color: #fff;
+}
+/*
+=============================
+News Letter
+=============================
+*/
+.news-letter{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+}
+/*
+=============================
+News para
+=============================
+*/
+.news p{
+    margin-top: 15px;
+    color: #fff;
+    line-height: 20px;
+}
+/*
+=============================
+Form
+=============================
+*/
+.form input[type="text"]{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.form input[type="submit"]{
+    background: #520a0b;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 7px 7px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+.form input[type="submit"]:hover{
+    opacity: 1;
+}
+.contact h1{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 18px;
+    word-spacing: 2px;
+    padding-bottom: 3px;
+}
+/*
+=============================
+Contact phone ,telephone
+=============================
+*/
+.contact p{
+    color: #fff;
+    border: none;
+    outline: none;
+    display: inline;
+    padding: 0;
+    font-size: 18px;
+}
+/*
+=============================
+Top footer border bottom
+=============================
+*/
+.top-footer::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #000;
+    opacity: 0.2;
+}
+/*
+=============================
+bottom footer
+=============================
+*/
+.bottom-footer{
+    display: flex;
+    width: 1100px;
+    height: 60px;
+    background: #d54346;
+    align-items: center;
+}
+/*
+=============================
+First Para
+=============================
+*/
+.bottom-footer .first {
+    margin-left: 2px;
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 10px;
+}
+/*
+=============================
+Second para
+=============================
+*/
+.bottom-footer .two {
+    text-align: right;
+    margin-right: 7px;
+    padding-top: 10px;
+}
